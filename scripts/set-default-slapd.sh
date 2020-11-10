@@ -24,7 +24,7 @@ rm -f ${DATABASEDIR}/*
 cp ${DBCONFIG} ${DATABASEDIR}
 slapd
 killall `which slapd`
-sudo chown -R ldap:ldap ${DATABASEDIR}
+sudo chown -R openldap:openldap ${DATABASEDIR}
 
 # Setup the LDAP schema
 mkdir -p /etc/openldap/slapd.d.new
