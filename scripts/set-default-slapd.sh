@@ -29,7 +29,7 @@ sudo chown -R ldap:ldap ${DATABASEDIR}
 # Setup the LDAP schema
 mkdir -p /etc/openldap/slapd.d.new
 slaptest -f ${SLAPDCONF} -F /etc/openldap/slapd.d.new
-chown ldap:ldap /etc/openldap/slapd.d.new -R
+chown openldap:openldap /etc/openldap/slapd.d.new -R
 chmod 700 /etc/openldap/slapd.d.new
 rm -Rf /etc/openldap/slapd.d
 mv /etc/openldap/slapd.d.new /etc/openldap/slapd.d
